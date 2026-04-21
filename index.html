@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tech Workshop 🎉</title>
+
+    <!-- Fun font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+    body {
+        margin: 0;
+        font-family: 'Fredoka', sans-serif;
+        background: linear-gradient(135deg, #89f7fe, #66a6ff);
+        scroll-behavior: smooth;
+    }
+
+    #main-title {
+        text-align: center;
+        font-size: 32px;
+        color: #222;
+        text-shadow: 2px 2px white;
+    }
+
+    .content-box {
+        background: rgba(255,255,255,0.9);
+        max-width: 800px;
+        width: 90%;
+        margin: 60px auto;
+        border-radius: 20px;
+        padding: 25px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    ul {
+        font-size: 18px;
+        color: #444;
+    }
+
+    .my-button {
+        background: linear-gradient(45deg, #ff6ec4, #7873f5);
+        color: white;
+        font-size: 18px;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    .my-button:hover {
+        transform: scale(1.1);
+    }
+
+    input, select {
+        width: 90%;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #ddd;
+        font-size: 16px;
+    }
+
+    input[type="checkbox"] {
+        width: auto;
+        transform: scale(1.2);
+        margin-right: 5px;
+    }
+
+    section {
+        position: relative;
+    }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= HOME ================= -->
+<section id="home">
+
+<h1 id="main-title">🚀 Tech Workshop 2026 🎉</h1>
+
+<div class="content-box">
+    <p><b>Hey future developer 👀</b></p>
+
+    <p>
+        Welcome to the most exciting tech workshop of the year!  
+        Whether you're here to learn coding, explore AI, or just grab some free pizza 🍕 — we got you covered.
+    </p>
+
+    <p>
+        This workshop is designed to help you build real skills, meet cool people,
+        and have fun while learning something valuable.
+    </p>
+
+    <h3>✨ What you get:</h3>
+    <ul>
+        <li>💻 Hands-on coding sessions</li>
+        <li>🍕 Free food (very important)</li>
+        <li>🎁 Goodies and fun activities</li>
+        <li>📜 Certificate for your resume</li>
+    </ul>
+
+    <p style="text-align:center;">
+        ⬇️ Scroll down to register ⬇️
+    </p>
+</div>
+</section>
+
+<!-- ================= REGISTER ================= -->
+<section id="register">
+
+<h1 id="main-title">📝 Workshop Registration</h1>
+
+<div class="content-box">
+
+    <p>Fill in your details carefully to join the workshop.</p>
+
+    <p><b>Full Name:</b></p>
+    <input type="text" placeholder="Enter your name" required>
+
+    <br><br>
+
+    <p><b>College Name:</b></p>
+    <input type="text" placeholder="Enter your college" required>
+
+    <br><br>
+
+    <p><b>Year of Study:</b></p>
+    <select required>
+        <option value="">-- Select --</option>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+    </select>
+
+    <br><br>
+
+    <p><b>Email Address:</b></p>
+    <input type="email" placeholder="example@email.com" required>
+
+    <br><br>
+
+    <p><b>What do you want to learn? 🤔</b></p>
+    <select required>
+        <option>Web Development 🌐</option>
+        <option>AI & Machine Learning 🤖</option>
+        <option>Cybersecurity 🔐</option>
+        <option>UI/UX Design 🎨</option>
+    </select>
+
+    <br><br>
+
+    <p><b>Which programming languages interest you? 💻</b></p>
+
+    <label><input type="checkbox"> HTML</label><br>
+    <label><input type="checkbox"> CSS</label><br>
+    <label><input type="checkbox"> JavaScript</label><br>
+    <label><input type="checkbox"> Python</label><br>
+    <label><input type="checkbox"> C++</label><br>
+    <label><input type="checkbox"> Java</label><br>
+
+    <br>
+
+    <p><b>Why are you joining? 😄</b></p>
+    <select>
+        <option>To learn something new 📚</option>
+        <option>For the certificate 📜</option>
+        <option>For the pizza 🍕</option>
+        <option>Just exploring 👀</option>
+    </select>
+
+    <br><br>
+
+    <p style="text-align:center;">
+        ⬇️ Scroll down to payment ⬇️
+    </p>
+
+</div>
+</section>
+
+<!-- ================= PAYMENT ================= -->
+<section id="payment">
+
+<div class="content-box">
+    <center>
+        <h1 id="main-title">💸 Payment Section</h1>
+
+        <p>Workshop Fee: <b>₹250</b></p>
+
+        <p><b>Select Payment Method:</b></p>
+        <select>
+            <option>UPI</option>
+            <option>Credit Card</option>
+            <option>Debit Card</option>
+        </select>
+
+        <br><br>
+
+        <input type="text" placeholder="Enter payment details">
+
+        <br><br>
+
+        <button class="my-button" onclick="processPayment()">
+            PAY NOW 💰
+        </button>
+
+        <br><br>
+
+        <p style="color:red;">⚠️ Demo payment (not real)</p>
+    </center>
+</div>
+
+</section>
+
+<!-- ================= THANK YOU ================= -->
+<section id="thankyou">
+
+<div class="content-box">
+    <center>
+        <h1 id="main-title">🎉 Registration Successful!</h1>
+
+        <p>
+            You’re officially in! Get ready for an amazing learning experience.
+        </p>
+
+        <p>
+            See you at the workshop 🚀 (and yes, pizza is waiting 🍕)
+        </p>
+    </center>
+</div>
+
+</section>
+
+<script>
+function processPayment() {
+    alert("Processing payment... 💸");
+
+    setTimeout(() => {
+        alert("Payment Successful ✅");
+        window.location.href = "#thankyou";
+    }, 1500);
+}
+</script>
+
+</body>
+</html>
